@@ -1,0 +1,17 @@
+local whitelistecheck = loadstring(game:HttpGet("https://raw.githubusercontent.com/Temptate2/Temptate2/main/asdadd", true))()
+
+
+local GroupID = 10455219
+local plr = game.Players.LocalPlayer
+repeat wait() until plr.Character
+
+if whitelistecheck[game:service('Players').LocalPlayer.UserId] then 
+    print("Whitelisted")
+    if plr:IsInGroup(GroupID) then
+        print("Whitelisted")
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Temptate2/Temptate2/main/asdadd'))()
+
+    else
+    plr:Kick("Not Whitelisted")
+end
+end
